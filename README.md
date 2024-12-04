@@ -17,16 +17,16 @@
 ## 🖥️ Preview
 
 ### **Homepage**
-![Homepage Screenshot]()
+![Homepage Screenshot](Images/homepage.png)
 
 ### **Technologies Selector**
-![Technologies Selector]()
+![Technologies Selector](Images/skills.png)
 
 ### **Social Badges**
-![Technologies Selector]()
+![Technologies Selector](Images/social.png)
 
 ### **Preview Section**
-![Preview Section]()
+![Preview Section](Images/preview.png)
 
 
 ---
