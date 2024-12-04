@@ -62,7 +62,7 @@
 ## 🎉 Getting Started
 1. **Clone the Repository**:
 ```bash
-  git clone https://github.com/your-username/github-readme-generator.git
+  git clone https://github.com/linuzenas/github-readme-generator.git
 
 ```
 2. **Open the index.html in your browser**:
