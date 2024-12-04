@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub README Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1>🚀 GitHub README Generator</h1>
+            </div>
+            <div class="card-content">
+                <div class="tabs">
+                    <div class="tab-nav">
+                        <button class="tab-btn active" data-tab="profile">Profile</button>
+                        <button class="tab-btn" data-tab="social">Social Links</button>
+                        <button class="tab-btn" data-tab="preview">Preview</button>
+                    </div>
+
+                    <div class="tab-content active" id="profile">
+                        <div class="form-group">
+                            <label>Profile Title</label>
+                            <input type="text" id="profile-title" placeholder="Hi, I'm John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label>Subtitle</label>
+                            <input type="text" id="profile-subtitle" placeholder="Software Engineer | Open Source Contributor">
+                        </div>
+                        <div class="form-group">
+                            <label>About Me</label>
+                            <textarea id="profile-about" placeholder="Write a brief introduction about yourself"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Technologies</label>
+                            <input type="search" id="tech-search" placeholder="Search for skills...">
+                            <div class="tech-categories">
+                                <h4>Programming Languages</h4>
+                                <div class="tech-buttons">
+                                    <button class="tech-btn" data-tech="javascript">JavaScript</button>
+                                    <button class="tech-btn" data-tech="typescript">TypeScript</button>
+                                    <button class="tech-btn" data-tech="python">Python</button>
+                                    <button class="tech-btn" data-tech="java">Java</button>
+                                    <button class="tech-btn" data-tech="csharp">C#</button>
+                                    <button class="tech-btn" data-tech="ruby">Ruby</button>
+                                    <button class="tech-btn" data-tech="php">PHP</button>
+                                    <button class="tech-btn" data-tech="go">Go</button>
+                                    <button class="tech-btn" data-tech="kotlin">Kotlin</button>
+                                    <button class="tech-btn" data-tech="rust">Rust</button>
+                                    <button class="tech-btn" data-tech="swift">Swift</button>
+                                    <button class="tech-btn" data-tech="lua">Lua</button>
+                                    <button class="tech-btn" data-tech="dart">Dart</button>
+                                    <button class="tech-btn" data-tech="scala">Scala</button>
+                                    <button class="tech-btn" data-tech="elixir">Elixir</button>
+                                    <button class="tech-btn" data-tech="clojure">Clojure</button>
+                                    <button class="tech-btn" data-tech="erlang">Erlang</button>
+                                    <button class="tech-btn" data-tech="sql">SQL</button>
+                                    <button class="tech-btn" data-tech="bash">Bash</button>
+                                    <button class="tech-btn" data-tech="powershell">PowerShell</button>
+                                    <button class="tech-btn" data-tech="assembly">Assembly</button>
+                                    <button class="tech-btn" data-tech="solidity">Solidity</button>
+                                    <button class="tech-btn" data-tech="fortran">Fortran</button>
+                                    <button class="tech-btn" data-tech="latex">LaTeX</button>
+                                    <button class="tech-btn" data-tech="objectivec">Objective-C</button>
+                                    <button class="tech-btn" data-tech="perl">Perl</button>
+                                    <button class="tech-btn" data-tech="dgraph">Dgraph</button>
+                                    <button class="tech-btn" data-tech="graphql">GraphQL</button>
+                                    <button class="tech-btn" data-tech="octave">Octave</button>
+                                    <button class="tech-btn" data-tech="zig">Zig</button>
+                                </div>
+                                <h4>Cloud Hosting</h4>
+                                <div class="tech-buttons">
+                                    <button class="tech-btn" data-tech="aws">AWS</button>
+                                    <button class="tech-btn" data-tech="azure">Azure</button>
+                                    <button class="tech-btn" data-tech="googlecloud ">Google Cloud</button>
+                                    <button class="tech-btn" data-tech="heroku">Heroku</button>
+                                    <button class="tech-btn" data-tech="firebase">Firebase</button>
+                                    <button class="tech-btn" data-tech="netlify">Netlify</button>
+                                    <button class="tech-btn" data-tech="vercel">Vercel</button>
+                                </div>
+                                <h4>Frameworks and Libraries</h4>
+                                <div class="tech-buttons">
+                                    <button class="tech-btn" data-tech="react">React</button>
+                                    <button class="tech-btn" data-tech="angular">Angular</button>
+                                    <button class="tech-btn" data-tech="vue">Vue.js</button>
+                                    <button class="tech-btn" data-tech="django">Django</button>
+                                    <button class="tech-btn" data-tech="flask">Flask</button>
+                                    <button class="tech-btn" data-tech="laravel">Laravel</button>
+                                    <button class="tech-btn" data-tech="spring">Spring</button>
+                                    <button class="tech-btn" data-tech="rails">Ruby on Rails</button>
+                                    <button class="tech-btn" data-tech="bootstrap">Bootstrap</button>
+                                    <button class="tech-btn" data-tech="tailwindcss">Tailwind CSS</button>
+                                    <button class="tech-btn" data-tech="jquery">jQuery</button>
+                                    <button class="tech-btn" data-tech="express">Express</button>
+                                    <button class="tech-btn" data-tech="nestjs">NestJS</button>
+                                    <button class="tech-btn" data-tech="nextjs">Next.js</button>
+                                    <button class="tech-btn" data-tech="nuxtjs">Nuxt.js</button>
+                                </div>
+                                <h4>DevOps and Tools</h4>
+                                <div class="tech-buttons">
+                                    <button class="tech-btn" data-tech="docker">Docker</button>
+                                    <button class="tech-btn" data-tech="kubernetes">Kubernetes</button>
+                                    <button class="tech-btn" data-tech="jenkins">Jenkins</button>
+                                    <button class="tech-btn" data-tech="terraform">Terraform</button>
+                                    <button class="tech-btn" data-tech="ansible">Ansible</button>
+                                    <button class="tech-btn" data-tech="git">Git</button>
+                                    <button class="tech-btn" data-tech="github">GitHub</button>
+                                    <button class="tech-btn" data-tech="gitlab">GitLab</button>
+                                    <button class="tech-btn" data-tech="bitbucket">Bitbucket</button>
+                                    <button class="tech-btn" data-tech="circleci">CircleCI</button>
+                                    <button class="tech-btn" data-tech="travisci">Travis CI</button>
+                                    <button class="tech-btn" data-tech="webpack">Webpack</button>
+                                    <button class="tech-btn" data-tech="babel">Babel</button>
+                                    <button class="tech-btn" data-tech="npm">npm</button>
+                                    <button class="tech-btn" data-tech="yarn">Yarn</button>
+                                    <button class="tech-btn" data-tech="composer">Composer</button>
+                                    <button class="tech-btn" data-tech="pip">pip</button>
+                                    <button class="tech-btn" data-tech="maven">Maven</button>
+                                    <button class="tech-btn" data-tech="gradle">Gradle</button>
+                                    <button class="tech-btn" data-tech="vagrant">Vagrant</button>
+                                    <button class="tech-btn" data-tech="postman">Postman</button>
+                                    <button class="tech-btn" data-tech="swagger">Swagger</button>
+                                    <button class="tech-btn" data-tech="selenium">Selenium</button>
+                                    <button class="tech-btn" data-tech="cypress">Cypress</button>
+                                    <button class="tech-btn" data-tech="mocha">Mocha</button>
+                                    <button class="tech-btn" data-tech="jest">Jest</button>
+                                    <button class="tech-btn" data-tech="chai">Chai</button>
+                                    <button class="tech-btn" data-tech="jasmine">Jasmine</button>
+                                    <button class="tech-btn" data-tech="puppeteer">Puppeteer</button>
+                                    <button class="tech-btn" data-tech="rollup">Rollup</button>
+                                    <button class="tech-btn" data-tech="gulp">Gulp</button>
+                                    <button class="tech-btn" data-tech="grunt">Grunt</button>
+                                    <button class=" tech-btn" data-tech="eslint">ESLint</button>
+                                    <button class="tech-btn" data-tech="prettier">Prettier</button>
+                                    <button class="tech-btn" data-tech="stylelint">Stylelint</button>
+                                    <button class="tech-btn" data-tech="flow">Flow</button>
+                                    <button class="tech-btn" data-tech="apollo">Apollo</button>
+                                    <button class="tech-btn" data-tech="relay">Relay</button>
+                                    <button class="tech-btn" data-tech="prisma">Prisma</button>
+                                    <button class="tech-btn" data-tech="typeorm">TypeORM</button>
+                                    <button class="tech-btn" data-tech="sequelize">Sequelize</button>
+                                    <button class="tech-btn" data-tech="mongoose">Mongoose</button>
+                                    <button class="tech-btn" data-tech="redis">Redis</button>
+                                    <button class="tech-btn" data-tech="mongodb">MongoDB</button>
+                                    <button class="tech-btn" data-tech="postgresql">PostgreSQL</button>
+                                    <button class="tech-btn" data-tech="mysql">MySQL</button>
+                                    <button class="tech-btn" data-tech="sqlite">SQLite</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="social">
+                        <div class="form-group">
+                            <label>GitHub Profile URL</label>
+                            <input type="text" id="github-url" placeholder="https://github.com/username">
+                        </div>
+                        <div class="form-group">
+                            <label>LinkedIn Profile URL</label>
+                            <input type="text" id="linkedin-url" placeholder="https://linkedin.com/in/username">
+                        </div>
+                        <div class="form-group">
+                            <label>Twitter Profile URL</label>
+                            <input type="text" id="twitter-url" placeholder="https://twitter.com/username">
+                        </div>
+                        <div class="form-group">
+                            <label>Instagram Profile URL</label>
+                            <input type="text" id="instagram-url" placeholder="https://instagram.com/username">
+                        </div>
+                        <div class="form-group">
+                            <label>Personal Website URL</label>
+                            <input type="text" id="website-url" placeholder="https://yourwebsite.com">
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="preview">
+                        <div class="preview-container">
+                            <pre id="readme-preview"></pre>
+                            <div class="preview-actions">
+                                <button id="copy-readme">Copy README</button>
+                                <button id="download-readme">Download README</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
